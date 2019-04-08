@@ -1,0 +1,9 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\bin\Debug\Practica9_ValordeCuadros.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\obj\Debug\Practica9_ValordeCuadros.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\obj\Debug\Practica9_ValordeCuadros.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\obj\Debug\Practica9_ValordeCuadros.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\obj\Debug\Practica9_ValordeCuadros.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\bin\Debug\Practica9_ValordeCuadros.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\bin\Debug\Practica9_ValordeCuadros.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\obj\Debug\Practica9_ValordeCuadros.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica9_ValordeCuadros\Practica9_ValordeCuadros\obj\Debug\Practica9_ValordeCuadros.pdb

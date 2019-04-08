@@ -1,0 +1,9 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\bin\Debug\Practica8_Cuadros.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\bin\Debug\Practica8_Cuadros.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\bin\Debug\Practica8_Cuadros.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\obj\Debug\Practica8_Cuadros.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\obj\Debug\Practica8_Cuadros.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\obj\Debug\Practica8_Cuadros.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\obj\Debug\Practica8_Cuadros.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\obj\Debug\Practica8_Cuadros.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica8_Cuadros\Practica8_Cuadros\obj\Debug\Practica8_Cuadros.pdb

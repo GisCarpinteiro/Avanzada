@@ -1,0 +1,9 @@
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\bin\Debug\Ejemplo1_Areacuadrado.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\obj\Debug\Ejemplo1_Areacuadrado.csprojResolveAssemblyReference.cache
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\obj\Debug\Ejemplo1_Areacuadrado.Form1.resources
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\obj\Debug\Ejemplo1_Areacuadrado.Properties.Resources.resources
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\obj\Debug\Ejemplo1_Areacuadrado.csproj.GenerateResource.Cache
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\bin\Debug\Ejemplo1_Areacuadrado.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\bin\Debug\Ejemplo1_Areacuadrado.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\obj\Debug\Ejemplo1_Areacuadrado.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo1_Areacuadrado\Ejemplo1_Areacuadrado\obj\Debug\Ejemplo1_Areacuadrado.pdb

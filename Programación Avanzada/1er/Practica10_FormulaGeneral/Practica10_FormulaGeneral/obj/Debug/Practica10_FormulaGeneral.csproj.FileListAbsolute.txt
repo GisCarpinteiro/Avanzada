@@ -1,0 +1,9 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\bin\Debug\Practica10_FormulaGeneral.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\bin\Debug\Practica10_FormulaGeneral.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\bin\Debug\Practica10_FormulaGeneral.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\obj\Debug\Practica10_FormulaGeneral.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\obj\Debug\Practica10_FormulaGeneral.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\obj\Debug\Practica10_FormulaGeneral.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\obj\Debug\Practica10_FormulaGeneral.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\obj\Debug\Practica10_FormulaGeneral.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica10_FormulaGeneral\Practica10_FormulaGeneral\obj\Debug\Practica10_FormulaGeneral.pdb

@@ -1,0 +1,12 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\bin\Debug\Practica11_AdivinaUnNumero.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\bin\Debug\Practica11_AdivinaUnNumero.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\bin\Debug\Practica11_AdivinaUnNumero.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\bin\Debug\Practica11_AdivinaUnNumero.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.pdb

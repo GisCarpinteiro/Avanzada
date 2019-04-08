@@ -1,0 +1,12 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\bin\Debug\Practica5_Figuras.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\bin\Debug\Practica5_Figuras.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\bin\Debug\Practica5_Figuras.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica5_Figuras\Practica5_Figuras\bin\Debug\Practica5_Figuras.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica5_Figuras\Practica5_Figuras\obj\Debug\Practica5_Figuras.pdb

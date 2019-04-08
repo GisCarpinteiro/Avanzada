@@ -1,0 +1,9 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\bin\Debug\Practica4_Graficos.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\bin\Debug\Practica4_Graficos.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\bin\Debug\Practica4_Graficos.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\obj\Debug\Practica4_Graficos.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\obj\Debug\Practica4_Graficos.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\obj\Debug\Practica4_Graficos.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\obj\Debug\Practica4_Graficos.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\obj\Debug\Practica4_Graficos.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica4_Graficos\Practica4_Graficos\obj\Debug\Practica4_Graficos.pdb

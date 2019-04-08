@@ -1,0 +1,12 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\bin\Debug\Practica6_OvaloCreciente.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\bin\Debug\Practica6_OvaloCreciente.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\bin\Debug\Practica6_OvaloCreciente.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\bin\Debug\Practica6_OvaloCreciente.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.pdb

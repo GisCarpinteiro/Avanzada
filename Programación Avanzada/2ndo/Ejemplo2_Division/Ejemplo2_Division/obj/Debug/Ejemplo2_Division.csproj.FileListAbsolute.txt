@@ -1,0 +1,9 @@
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\bin\Debug\Ejemplo2_Division.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\bin\Debug\Ejemplo2_Division.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\bin\Debug\Ejemplo2_Division.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\obj\Debug\Ejemplo2_Division.csprojResolveAssemblyReference.cache
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\obj\Debug\Ejemplo2_Division.Form1.resources
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\obj\Debug\Ejemplo2_Division.Properties.Resources.resources
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\obj\Debug\Ejemplo2_Division.csproj.GenerateResource.Cache
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\obj\Debug\Ejemplo2_Division.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Ejemplo2_Division\Ejemplo2_Division\obj\Debug\Ejemplo2_Division.pdb

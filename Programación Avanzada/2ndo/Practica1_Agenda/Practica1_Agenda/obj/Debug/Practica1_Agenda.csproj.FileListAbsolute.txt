@@ -1,0 +1,9 @@
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\bin\Debug\Practica1_Agenda.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.csprojResolveAssemblyReference.cache
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.Form1.resources
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.Properties.Resources.resources
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.csproj.GenerateResource.Cache
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\bin\Debug\Practica1_Agenda.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\bin\Debug\Practica1_Agenda.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.exe
+C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.pdb

@@ -1,0 +1,9 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\bin\Debug\Practica7_Cubo.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\obj\Debug\Practica7_Cubo.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\obj\Debug\Practica7_Cubo.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\obj\Debug\Practica7_Cubo.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\obj\Debug\Practica7_Cubo.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\bin\Debug\Practica7_Cubo.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\bin\Debug\Practica7_Cubo.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\obj\Debug\Practica7_Cubo.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica7_Cubo\Practica7_Cubo\obj\Debug\Practica7_Cubo.pdb

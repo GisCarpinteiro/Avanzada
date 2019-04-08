@@ -1,0 +1,9 @@
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\bin\Debug\Practica2_Colores.exe.config
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\obj\Debug\Practica2_Colores.csprojResolveAssemblyReference.cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\obj\Debug\Practica2_Colores.Form1.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\obj\Debug\Practica2_Colores.Properties.Resources.resources
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\obj\Debug\Practica2_Colores.csproj.GenerateResource.Cache
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\bin\Debug\Practica2_Colores.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\bin\Debug\Practica2_Colores.pdb
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\obj\Debug\Practica2_Colores.exe
+C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica2_Colores\Practica2_Colores\obj\Debug\Practica2_Colores.pdb
