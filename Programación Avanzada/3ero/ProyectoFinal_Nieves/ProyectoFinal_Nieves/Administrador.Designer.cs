@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal_Nieves
 {
-    partial class Jefe
+    partial class Administrador
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Jefe
+            // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 305);
-            this.Name = "Jefe";
-            this.Text = "Jefe";
+            this.Name = "Administrador";
+            this.Text = "Administrador";
             this.ResumeLayout(false);
 
         }

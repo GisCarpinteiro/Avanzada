@@ -102,6 +102,7 @@ namespace ProyectoFinal_Nieves
                             puesto = Convert.ToInt32(reader["id_puesto"]);
                             if (puesto == 2){
                                 MessageBox.Show("Bienvenido Cajero");
+                                Visible = false;
                                 CajeroPrincipal CajeroPrincipal = new CajeroPrincipal();
                                 CajeroPrincipal.Show();
                                

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal_Nieves
 {
-    public partial class Jefe : Form
+    public partial class Administrador : Form
     {
-        public Jefe()
+        public Administrador()
         {
             InitializeComponent();
         }

@@ -10,3 +10,6 @@ C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica11_AdivinaUnNumero\P
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\bin\Debug\Practica11_AdivinaUnNumero.exe.config
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.exe
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\bin\Debug\Practica11_AdivinaUnNumero.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.exe
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\1er\Practica11_AdivinaUnNumero\Practica11_AdivinaUnNumero\obj\Debug\Practica11_AdivinaUnNumero.pdb

@@ -73,3 +73,12 @@ INSERT INTO Trabajador (nombre, apellido, telefono,
 values ("David", "Orozco", "33101010",
          "giselbonita",2, 1);
 
+
+INSERT INTO Helado (id_helado, precio, tipo_helado)
+        values(2, 14, "Cono sencillo");
+
+INSERT INTO Helado (id_helado, precio, tipo_helado)
+        values(3, 20, "Frapuchino");
+
+INSERT INTO Helado(id_helado, precio, tipo_helado)
+    values(4, 10, "Paleta");
