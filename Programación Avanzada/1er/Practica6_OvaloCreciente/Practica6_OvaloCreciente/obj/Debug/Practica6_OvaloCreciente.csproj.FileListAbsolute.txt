@@ -10,3 +10,6 @@ C:\Users\Master\Desktop\CETI\Programación Avanzada\Practica6_OvaloCreciente\Pra
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\bin\Debug\Practica6_OvaloCreciente.exe.config
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.exe
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\bin\Debug\Practica6_OvaloCreciente.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.exe
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\1er\Practica6_OvaloCreciente\Practica6_OvaloCreciente\obj\Debug\Practica6_OvaloCreciente.pdb

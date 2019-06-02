@@ -7,3 +7,12 @@ C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica2_Bola\Pr
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\bin\Debug\Practica2_Bola.pdb
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.exe
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\bin\Debug\Practica2_Bola.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.exe
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\bin\Debug\Practica2_Bola.exe
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\bin\Debug\Practica2_Bola.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.csprojResolveAssemblyReference.cache
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.Form1.resources
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.Properties.Resources.resources
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica2_Bola\Practica2_Bola\obj\Debug\Practica2_Bola.csproj.GenerateResource.Cache

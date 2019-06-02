@@ -7,3 +7,6 @@ C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\bin\Debug\Practica1_Agenda.pdb
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.exe
 C:\Users\home\Desktop\Ceti\Septimo\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.pdb
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\bin\Debug\Practica1_Agenda.exe.config
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.exe
+C:\Users\home\Desktop\Ceti\Septimo\Avanzada\Programación Avanzada\2ndo\Practica1_Agenda\Practica1_Agenda\obj\Debug\Practica1_Agenda.pdb
