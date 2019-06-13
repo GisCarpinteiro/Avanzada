@@ -23,24 +23,16 @@ namespace ProyectoFinal_Nieves
         }
 
         DataSet ds;
-        int g, contarid;
+        int g, contarid, eliminado;
         bool banderaseinsertaron = false;
 
         private void Administrar_Cajero_Load(object sender, EventArgs e)
         {
             dgvE.MultiSelect = false;
-            /* dgvE.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
-             dgvE.ColumnCount = 6;
-             this.Controls.Add(dgvE);
-             dgvE.Columns[0].HeaderText = "Nombre";
-             dgvE.Columns[1].HeaderText = "Apellido";
-             dgvE.Columns[2].HeaderText = "Teléfono";
-             dgvE.Columns[3].HeaderText = "Id";
-             dgvE.Columns[4].HeaderText = "Contraseña";
-             dgvE.Columns[4].HeaderText = "Puesto";
-             */
-            mostrarE();
+            
+                mostrarE();
+               
+            
            
         }
 
@@ -48,7 +40,7 @@ namespace ProyectoFinal_Nieves
             try
             {
                 conexion.Open();
-                MySqlCommand trabajador = new MySqlCommand("select nombre, apellido, telefono, id_trabajador, contrasena from trabajador where id_puesto=2", conexion);
+                MySqlCommand trabajador = new MySqlCommand("select nombre, apellido, telefono, id_trabajador, contrasena from trabajador where id_puesto=2 and eliminado=0", conexion);
 
                 MySqlDataAdapter adapter =  new MySqlDataAdapter(trabajador);
                 ds = new DataSet();
@@ -81,10 +73,38 @@ namespace ProyectoFinal_Nieves
 
         private void btnEliminarE_Click(object sender, EventArgs e)
         {
+            //////////// Solo dgv /////////////////////////////
             foreach (DataGridViewRow item in this.dgvE.SelectedRows)
             {
                 dgvE.Rows.RemoveAt(item.Index);
             }
+
+            ///////////////////////////////////////////////
+
+            try
+            {
+                conexion.Open();
+                MySqlCommand eliminarusuario =
+                new MySqlCommand("update trabajador set eliminado=1 where id_trabajador=" + tbIdE.Text, conexion);
+                if (eliminarusuario.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se elimino el usuario");
+                    //banderaseinsertaron = true;
+
+                }
+                else
+                    MessageBox.Show("No se insertaron datos");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void btnAgregarE_Click(object sender, EventArgs e)
@@ -112,7 +132,7 @@ namespace ProyectoFinal_Nieves
             {
                 conexion.Open();
                 MySqlCommand insertardatos = 
-                new MySqlCommand("Insert into trabajador (nombre, apellido, telefono, contrasena, id_trabajador, id_puesto) values  ('" + tbNombreE.Text + "', '" + tbApellido.Text + "', '" + tbTelE.Text + "', '" + tbContraE.Text + "', " + Convert.ToInt32(tbIdE.Text) + ", 2)", conexion);
+                new MySqlCommand("Insert into trabajador (nombre, apellido, telefono, contrasena, id_trabajador, id_puesto, eliminado) values  ('" + tbNombreE.Text + "', '" + tbApellido.Text + "', '" + tbTelE.Text + "', '" + tbContraE.Text + "', " + Convert.ToInt32(tbIdE.Text) + ", 2, 0)", conexion);
 
                 if (insertardatos.ExecuteNonQuery() == 1)
                 {
@@ -136,6 +156,31 @@ namespace ProyectoFinal_Nieves
 
         }
 
+        void checareliminado() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand checar = new MySqlCommand("select eliminado from trabajador where id_trabajador="+tbIdE.Text, conexion);
+                MySqlDataReader reader;
+                reader = checar.ExecuteReader();
+
+                 while (reader.Read())
+                {
+                    eliminado = Convert.ToInt32(reader["eliminado"]);
+
+
+                }
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+        }
         void checarid() {
             try
             {
