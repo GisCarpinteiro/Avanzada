@@ -28,13 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnAdministrador = new System.Windows.Forms.Button();
+            this.BtnHelados = new System.Windows.Forms.Button();
+            this.BtnVentas = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.Location = new System.Drawing.Point(72, 27);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(140, 106);
+            this.btnEmpleados.TabIndex = 0;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAdministrador
+            // 
+            this.btnAdministrador.Location = new System.Drawing.Point(248, 27);
+            this.btnAdministrador.Name = "btnAdministrador";
+            this.btnAdministrador.Size = new System.Drawing.Size(141, 106);
+            this.btnAdministrador.TabIndex = 1;
+            this.btnAdministrador.Text = "Administradores";
+            this.btnAdministrador.UseVisualStyleBackColor = true;
+            // 
+            // BtnHelados
+            // 
+            this.BtnHelados.Location = new System.Drawing.Point(72, 161);
+            this.BtnHelados.Name = "BtnHelados";
+            this.BtnHelados.Size = new System.Drawing.Size(140, 106);
+            this.BtnHelados.TabIndex = 2;
+            this.BtnHelados.Text = "Helados";
+            this.BtnHelados.UseVisualStyleBackColor = true;
+            // 
+            // BtnVentas
+            // 
+            this.BtnVentas.Location = new System.Drawing.Point(249, 161);
+            this.BtnVentas.Name = "BtnVentas";
+            this.BtnVentas.Size = new System.Drawing.Size(140, 106);
+            this.BtnVentas.TabIndex = 3;
+            this.BtnVentas.Text = "Ventas";
+            this.BtnVentas.UseVisualStyleBackColor = true;
+            this.BtnVentas.Click += new System.EventHandler(this.BtnVentas_Click);
             // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 305);
+            this.Controls.Add(this.BtnVentas);
+            this.Controls.Add(this.BtnHelados);
+            this.Controls.Add(this.btnAdministrador);
+            this.Controls.Add(this.btnEmpleados);
             this.Name = "Administrador";
             this.Text = "Administrador";
             this.ResumeLayout(false);
@@ -42,5 +88,10 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button btnAdministrador;
+        private System.Windows.Forms.Button BtnHelados;
+        private System.Windows.Forms.Button BtnVentas;
     }
 }

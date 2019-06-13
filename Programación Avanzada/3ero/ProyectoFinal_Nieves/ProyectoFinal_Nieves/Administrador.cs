@@ -16,5 +16,19 @@ namespace ProyectoFinal_Nieves
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           // Visible = false;
+            Administrar_Cajero Administrar_Cajero = new Administrar_Cajero();
+            Administrar_Cajero.Show();
+        }
+
+        private void BtnVentas_Click(object sender, EventArgs e)
+        {
+           // Visible = false;
+            Inventario_Administrador Inventario_Administrador = new Inventario_Administrador();
+            Inventario_Administrador.Show();
+        }
     }
 }

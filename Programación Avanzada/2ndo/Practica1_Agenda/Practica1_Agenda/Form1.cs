@@ -65,14 +65,15 @@ namespace Practica1_Agenda
         {
             dgvDatos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvDatos.MultiSelect = false;
-            dgvDatos.ColumnCount = 5;
+            dgvDatos.ColumnCount = 4;
             this.Controls.Add(dgvDatos);
             dgvDatos.Columns[0].HeaderText = "Nombre";
             dgvDatos.Columns[1].HeaderText = "ID";
             dgvDatos.Columns[2].HeaderText = "Telefono";
             dgvDatos.Columns[3].HeaderText = "Domicilio";
+           
 
-            
+
         }
 
         private void BtnModificar_Click(object sender, EventArgs e)

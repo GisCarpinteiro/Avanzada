@@ -23,7 +23,15 @@ namespace ProyectoFinal_Nieves
         }
         string contrasenabd, contrasena;
         int idbd, id, puesto;
-        bool bandera_entroid=false, banderabienvenido=false;
+
+        private void acercaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        bool bandera_entroid =false, banderabienvenido=false;
 
         private void BtnAceptarinicio_Click(object sender, EventArgs e)
         {
@@ -102,17 +110,22 @@ namespace ProyectoFinal_Nieves
                             puesto = Convert.ToInt32(reader["id_puesto"]);
                             if (puesto == 2){
                                 MessageBox.Show("Bienvenido Cajero");
+                                axWindowsMediaPlayer1.close();
                                 Visible = false;
                                 CajeroPrincipal CajeroPrincipal = new CajeroPrincipal();
+                                CajeroPrincipal.lbl_id.Text = Convert.ToString(id);
                                 CajeroPrincipal.Show();
+                                
                                
                                 
                                
                             }
                             else{
                                 MessageBox.Show("Bienvenido Dueño");
-                                //Form Formulario = New Form();
-                                //Formulario.Show();
+                                axWindowsMediaPlayer1.close();
+                                Visible = false;
+                                Administrador Administrador = new Administrador();
+                                Administrador.Show();
                             }
                         }
 
@@ -135,7 +148,9 @@ namespace ProyectoFinal_Nieves
 
         private void InicioSesion_Load(object sender, EventArgs e)
         {
-          
+            axWindowsMediaPlayer1.URL = @"C:\Users\home\Videos\NuevoHelado.mp4";
+            axWindowsMediaPlayer1.settings.setMode("loop", true);
+            axWindowsMediaPlayer1.uiMode = ("none");
 
         }
     }

@@ -23,45 +23,37 @@ namespace ProyectoFinal_Nieves
 
         }
 
-        string t_helado;
-        int n_thelado;
+        string t_helado, helado;
+        double precioHelado, cantidad; //double
+
+        
+       // int id_cajero;
 
         private void CajeroPrincipal_Load(object sender, EventArgs e)
         {
-            //InicioSesion InicioSesion = new InicioSesion();
+           
             timer1.Start();
-            //cb_tipohelado.Items.Add("Hola");
-            //cb_tipohelado.Items.Add("soy");
-            //cb_tipohelado.Items.Add("gis");
+            mostrarhelados();
+            mostrarnombre();
+            dgvPedido.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvPedido.MultiSelect = false;
+            dgvPedido.ColumnCount = 3;
+            this.Controls.Add(dgvPedido);
+            dgvPedido.Columns[0].HeaderText = "Cantidad";
+            dgvPedido.Columns[1].HeaderText = "Tipo Helado";
+            dgvPedido.Columns[2].HeaderText = "Precio";
 
-           /* try
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToString("G");
+            
+        }
+
+        void mostrarhelados() {
+            try
             {
-                conexion.Open();
-
-                MySqlCommand queryn_thelado = new MySqlCommand("select count(*) from helado", conexion);
-                MySqlDataReader reader1;
-                reader1 = queryn_thelado.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    n_thelado = Convert.ToInt32(queryn_thelado.ExecuteScalar());
-
-                }
-               // reader.Close();
-
-               
-                conexion.Close();
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("Error al conectar");
-                MessageBox.Show(ex.Message);
-
-            }*/
-
-            try {
                 conexion.Open();
                 MySqlCommand querythelado = new MySqlCommand("select tipo_helado from helado", conexion);
                 MySqlDataReader reader;
@@ -69,26 +61,91 @@ namespace ProyectoFinal_Nieves
 
                 while (reader.Read())
                 {
-                    
-                   // for (int i = 0; i < 3; i++)
-                   // {
-                        t_helado = Convert.ToString(reader["tipo_helado"]);
-                        cb_tipohelado.Items.Add(t_helado);
-                   // }
+
+
+                    t_helado = Convert.ToString(reader["tipo_helado"]);
+                    cb_tipohelado.Items.Add(t_helado);
+
 
                 }
 
                 conexion.Close();
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
 
                 MessageBox.Show("Error al conectar1");
                 MessageBox.Show(ex.Message);
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        void mostrarnombre() {
+
+            try
+            {
+                conexion.Open();
+                MySqlCommand querythelado = new MySqlCommand("select nombre, apellido from trabajador where id_trabajador="+ lbl_id.Text, conexion);
+                MySqlDataReader reader;
+                reader = querythelado.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    lblNombrecajero.Text = Convert.ToString(reader["nombre"]) + " "+ Convert.ToString(reader["apellido"]);
+
+                }
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void cb_tipohelado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblFecha.Text = DateTime.Now.ToString("G");
+            //mostrarhelados();
+        }
+
+      
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            cantidad = Convert.ToDouble(nuCantidad.Value);
+
+            helado = Convert.ToString(cb_tipohelado);
+            sacarprecio();
+            dgvPedido.Rows.Add(nuCantidad.Value, cb_tipohelado.SelectedItem, (precioHelado * cantidad));
+        }
+
+       void sacarprecio() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand querythelado = new MySqlCommand("select precio from helado where tipo_helado= '" + cb_tipohelado.SelectedItem + "'", conexion);
+                MySqlDataReader reader;
+                reader = querythelado.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    precioHelado = Convert.ToDouble(reader["precio"]) ;
+
+                }
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+
         }
     }
 }
