@@ -110,7 +110,22 @@ namespace ProyectoFinal_Nieves
             //mostrarhelados();
         }
 
-      
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            //////////// Solo dgv /////////////////////////////
+            try
+            {
+                foreach (DataGridViewRow item in this.dgvPedido.SelectedRows)
+                {
+                    dgvPedido.Rows.RemoveAt(item.Index);
+                }
+            }
+            catch (Exception) {
+                MessageBox.Show("Error, se elimino un campo vacio");
+
+            }
+            ///////////////////////////////////////////////
+        }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {

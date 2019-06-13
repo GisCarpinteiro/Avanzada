@@ -104,6 +104,7 @@
             this.btnEliminarE.TabIndex = 28;
             this.btnEliminarE.Text = "Eliminar";
             this.btnEliminarE.UseVisualStyleBackColor = true;
+            this.btnEliminarE.Click += new System.EventHandler(this.btnEliminarE_Click);
             // 
             // btnAgregarE
             // 
@@ -113,6 +114,7 @@
             this.btnAgregarE.TabIndex = 27;
             this.btnAgregarE.Text = "Agregar";
             this.btnAgregarE.UseVisualStyleBackColor = true;
+            this.btnAgregarE.Click += new System.EventHandler(this.btnAgregarE_Click);
             // 
             // tbContraE
             // 
@@ -150,6 +152,7 @@
             this.dgvE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvE.Size = new System.Drawing.Size(456, 268);
             this.dgvE.TabIndex = 22;
+            this.dgvE.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvE_CellClick);
             // 
             // Administrar_Administrador
             // 
@@ -171,6 +174,7 @@
             this.Controls.Add(this.dgvE);
             this.Name = "Administrar_Administrador";
             this.Text = "Administrar_Administrador";
+            this.Load += new System.EventHandler(this.Administrar_Administrador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -52,6 +52,7 @@
             this.btnAdministrador.TabIndex = 1;
             this.btnAdministrador.Text = "Administradores";
             this.btnAdministrador.UseVisualStyleBackColor = true;
+            this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
             // 
             // BtnHelados
             // 
