@@ -60,8 +60,9 @@
             this.BtnHelados.Name = "BtnHelados";
             this.BtnHelados.Size = new System.Drawing.Size(140, 106);
             this.BtnHelados.TabIndex = 2;
-            this.BtnHelados.Text = "Helados";
+            this.BtnHelados.Text = "Inventario";
             this.BtnHelados.UseVisualStyleBackColor = true;
+            this.BtnHelados.Click += new System.EventHandler(this.BtnHelados_Click);
             // 
             // BtnVentas
             // 

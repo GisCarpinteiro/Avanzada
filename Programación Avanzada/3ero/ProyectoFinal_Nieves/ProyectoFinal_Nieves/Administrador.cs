@@ -36,5 +36,11 @@ namespace ProyectoFinal_Nieves
             Administrar_Administrador Administrar_Administrador = new Administrar_Administrador();
             Administrar_Administrador.Show();
         }
+
+        private void BtnHelados_Click(object sender, EventArgs e)
+        {
+            Inventario_Administrador Inventario_Administrador = new Inventario_Administrador();
+            Inventario_Administrador.Show();
+        }
     }
 }

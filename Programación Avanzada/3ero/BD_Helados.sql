@@ -4,13 +4,13 @@ use Helados;
 create table Trabajador(nombre varchar(30),
  apellido varchar(30), telefono varchar(10),
  contrasena varchar(15), id_trabajador int,
- id_puesto int,
+ id_puesto int, eliminado int,
  primary key (id_trabajador)
 );
 
 create table Helado(
     id_helado int, precio int,
-    tipo_helado varchar(20), 
+    tipo_helado varchar(20), cantidad int, eliminadoh int, 
     primary key (id_helado)
 );
 
@@ -52,33 +52,36 @@ INSERT INTO Puesto (id_puesto, tipo_puesto)
             values (1, "Administrador");
 
 INSERT INTO Trabajador (nombre, apellido, telefono, 
-            contrasena, id_trabajador, id_puesto) 
+            contrasena, id_trabajador, id_puesto, eliminado) 
 values ("Jorge", "Davalos", "33188990",
-         "giselbonita",1, 2);
+         "giselbonita",1, 2, 0);
 
 INSERT INTO Pedido( fecha, hora, subtotal, total, 
             id_trabajador, id_pedido) 
             values ("2019-05-31", "02:00:00", 50, 58,
             1, 1);
 
-INSERT INTO Helado(id_helado, precio, tipo_helado) 
-            values (1, 25, "Cono doble");
+INSERT INTO Helado(id_helado, precio, tipo_helado, cantidad, eliminadoh) 
+            values (1, 25, "Cono doble", 50, 0);
 
 INSERT INTO Cantidad(cantidad, id_pedido, id_helado,
             id_cantidad)
             values (2, 1, 1, 1);
 
 INSERT INTO Trabajador (nombre, apellido, telefono, 
-            contrasena, id_trabajador, id_puesto) 
+            contrasena, id_trabajador, id_puesto, eliminado) 
 values ("David", "Orozco", "33101010",
-         "giselbonita",2, 1);
+         "giselbonita",2, 1, 0);
 
 
-INSERT INTO Helado (id_helado, precio, tipo_helado)
-        values(2, 14, "Cono sencillo");
+INSERT INTO Helado (id_helado, precio, tipo_helado, cantidad, eliminadoh)
+        values(2, 14, "Cono sencillo", 50, 0);
 
-INSERT INTO Helado (id_helado, precio, tipo_helado)
-        values(3, 20, "Frapuchino");
+INSERT INTO Helado (id_helado, precio, tipo_helado, cantidad, eliminadoh)
+        values(3, 20, "Frapuchino", 50, 0);
 
-INSERT INTO Helado(id_helado, precio, tipo_helado)
-    values(4, 10, "Paleta");
+INSERT INTO Helado(id_helado, precio, tipo_helado, cantidad, eliminadoh)
+    values(4, 10, "Paleta", 50,  0);
+
+/*select helado.tipo_helado, helado.precio, cantidad.cantidad from helado 
+inner join cantidad on cantidad.id_helado= helado.id_helado where eliminadoh=0;*/

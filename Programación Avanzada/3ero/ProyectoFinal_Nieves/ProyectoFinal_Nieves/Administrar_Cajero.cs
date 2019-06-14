@@ -186,17 +186,9 @@ namespace ProyectoFinal_Nieves
             {
                 conexion.Open();
                 MySqlCommand checar = new MySqlCommand("select count(*) from trabajador where id_trabajador= " + Convert.ToInt32(tbIdE.Text) , conexion);
-                //MySqlDataReader reader;
-                //reader = checar.ExecuteReader();
-
-               // while (reader.Read())
-                //{
 
                    contarid = int.Parse(checar.ExecuteScalar().ToString());
                    
-
-                //}
-
                 conexion.Close();
             }
             catch (Exception ex)
