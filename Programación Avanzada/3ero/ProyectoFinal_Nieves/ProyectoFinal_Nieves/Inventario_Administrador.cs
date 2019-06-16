@@ -22,14 +22,17 @@ namespace ProyectoFinal_Nieves
             mostrarI();
         }
         DataSet ds;
-        int g, c, id=0;
+        int g, c, id = 0;
+        int  idheladoh=0;
         bool banderaseinsertaron = false;
+
+
         void mostrarI()
         {
             try
             {
                 conexion.Open();
-                MySqlCommand trabajador = new MySqlCommand("select tipo_helado, precio, cantidad from helado where eliminadoh=0", conexion);
+                MySqlCommand trabajador = new MySqlCommand("select  tipo_helado, precio, cantidad, id_helado from helado where eliminadoh=0", conexion);
 
                 MySqlDataAdapter adapter = new MySqlDataAdapter(trabajador);
                 ds = new DataSet();
@@ -54,6 +57,7 @@ namespace ProyectoFinal_Nieves
             tbHelado.Text = dgvI[0, g].Value.ToString();
             tbPrecio.Text = dgvI[1, g].Value.ToString();
             numericUpDown1.Value = Convert.ToInt32(dgvI[2, g].Value.ToString());
+            tbidhelado.Text = dgvI[3, g].Value.ToString();
            // numericUpDown1.Value = CodgvI[2, 3].Value.ToString;
             c = Convert.ToInt32(dgvI[2, g].Value.ToString());
             
@@ -76,12 +80,45 @@ namespace ProyectoFinal_Nieves
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            obtenerid();
+            //////////// Solo dgv /////////////////////////////
+            foreach (DataGridViewRow item in this.dgvI.SelectedRows)
+            {
+                dgvI.Rows.RemoveAt(item.Index);
+            }
 
+            ///////////////////////////////////////////////
+
+            try
+            {
+                conexion.Open();
+                MySqlCommand eliminarusuario =
+                new MySqlCommand("update helado set eliminadoh=1 where id_helado= " + idheladoh, conexion);
+                if (eliminarusuario.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se elimino el helado");
+               
+
+                }
+                else
+                    MessageBox.Show("No se insertaron datos");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Inventario_Administrador_Load(object sender, EventArgs e)
         {
+            id_helado();
             mostrarI();
+            
         }
 
         void insertarenHelado() {
@@ -115,6 +152,36 @@ namespace ProyectoFinal_Nieves
 
         }
 
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            dgvI[0, g].Value = tbHelado.Text;
+            dgvI[1, g].Value = tbPrecio.Text;
+            dgvI[2, g].Value = numericUpDown1.Value;
+            //////////////////////////////////////////////////////
+            try
+            {
+                conexion.Open();
+                MySqlCommand modificarhelado =
+                new MySqlCommand("update helado set tipo_helado='" + tbHelado.Text + "', precio= '"+ Convert.ToInt32(tbPrecio.Text) + "', cantidad= '" + numericUpDown1.Value + "' where id_helado= '" + Convert.ToInt32(tbidhelado.Text) + "'", conexion);
+                if (modificarhelado.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se modifico el helado");
+                    
+                }
+                else
+                    MessageBox.Show("No se modifico el helado");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+        }
 
         void id_helado() {
             try
@@ -135,7 +202,35 @@ namespace ProyectoFinal_Nieves
 
         }
 
-          
+        void obtenerid() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand idhelado = new MySqlCommand("select id_helado from helado where eliminadoh=0", conexion);
+                MySqlDataReader reader;
+                reader = idhelado.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+
+                   idheladoh = Convert.ToInt32(reader["id_helado"]);
+                    
+
+
+                }
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al mostrar datos");
+                MessageBox.Show(ex.Message);
+            }
+
+        }
         
     }
 }

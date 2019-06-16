@@ -156,6 +156,40 @@ namespace ProyectoFinal_Nieves
 
         }
 
+        private void btnModificarE_Click(object sender, EventArgs e)
+        {
+            dgvE[0, g].Value = tbNombreE.Text;
+            dgvE[1, g].Value = tbApellido.Text;
+            dgvE[2, g].Value = tbTelE.Text;
+            dgvE[4, g].Value = tbContraE.Text;
+            dgvE[3, g].Value = tbIdE.Text;
+
+
+            //////////////////////////////////////////////////////
+            try
+            {
+                conexion.Open();
+                MySqlCommand modificarhelado =
+                new MySqlCommand("update trabajador set nombre='" + tbNombreE.Text + "', apellido= '" + tbApellido.Text + "', telefono= '" + tbTelE.Text + "', contrasena= '"+ tbContraE.Text + "' where id_trabajador= '" + Convert.ToInt32(tbIdE.Text) + "'", conexion);
+                if (modificarhelado.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se modifico el empleado");
+
+                }
+                else
+                    MessageBox.Show("No se modifico el empleado");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         void checareliminado() {
             try
             {

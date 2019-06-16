@@ -41,6 +41,7 @@
             this.tbTelE = new System.Windows.Forms.TextBox();
             this.tbNombreE = new System.Windows.Forms.TextBox();
             this.dgvE = new System.Windows.Forms.DataGridView();
+            this.tbModificarA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvE)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +99,7 @@
             // 
             // btnEliminarE
             // 
-            this.btnEliminarE.Location = new System.Drawing.Point(464, 353);
+            this.btnEliminarE.Location = new System.Drawing.Point(477, 353);
             this.btnEliminarE.Name = "btnEliminarE";
             this.btnEliminarE.Size = new System.Drawing.Size(75, 23);
             this.btnEliminarE.TabIndex = 28;
@@ -125,6 +126,7 @@
             // 
             // tbIdE
             // 
+            this.tbIdE.Enabled = false;
             this.tbIdE.Location = new System.Drawing.Point(34, 213);
             this.tbIdE.Name = "tbIdE";
             this.tbIdE.Size = new System.Drawing.Size(100, 20);
@@ -154,11 +156,22 @@
             this.dgvE.TabIndex = 22;
             this.dgvE.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvE_CellClick);
             // 
+            // tbModificarA
+            // 
+            this.tbModificarA.Location = new System.Drawing.Point(379, 353);
+            this.tbModificarA.Name = "tbModificarA";
+            this.tbModificarA.Size = new System.Drawing.Size(75, 23);
+            this.tbModificarA.TabIndex = 35;
+            this.tbModificarA.Text = "Modificar";
+            this.tbModificarA.UseVisualStyleBackColor = true;
+            this.tbModificarA.Click += new System.EventHandler(this.tbModificarA_Click);
+            // 
             // Administrar_Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 433);
+            this.Controls.Add(this.tbModificarA);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.label4);
@@ -196,5 +209,6 @@
         private System.Windows.Forms.TextBox tbTelE;
         private System.Windows.Forms.TextBox tbNombreE;
         private System.Windows.Forms.DataGridView dgvE;
+        private System.Windows.Forms.Button tbModificarA;
     }
 }

@@ -41,12 +41,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbApellido = new System.Windows.Forms.TextBox();
+            this.btnModificarE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvE)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEliminarE
             // 
-            this.btnEliminarE.Location = new System.Drawing.Point(461, 337);
+            this.btnEliminarE.Location = new System.Drawing.Point(474, 337);
             this.btnEliminarE.Name = "btnEliminarE";
             this.btnEliminarE.Size = new System.Drawing.Size(75, 23);
             this.btnEliminarE.TabIndex = 14;
@@ -73,6 +74,7 @@
             // 
             // tbIdE
             // 
+            this.tbIdE.Enabled = false;
             this.tbIdE.Location = new System.Drawing.Point(31, 197);
             this.tbIdE.Name = "tbIdE";
             this.tbIdE.Size = new System.Drawing.Size(100, 20);
@@ -154,11 +156,22 @@
             this.tbApellido.Size = new System.Drawing.Size(100, 20);
             this.tbApellido.TabIndex = 20;
             // 
+            // btnModificarE
+            // 
+            this.btnModificarE.Location = new System.Drawing.Point(372, 336);
+            this.btnModificarE.Name = "btnModificarE";
+            this.btnModificarE.Size = new System.Drawing.Size(75, 23);
+            this.btnModificarE.TabIndex = 22;
+            this.btnModificarE.Text = "Modificar";
+            this.btnModificarE.UseVisualStyleBackColor = true;
+            this.btnModificarE.Click += new System.EventHandler(this.btnModificarE_Click);
+            // 
             // Administrar_Cajero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 394);
+            this.Controls.Add(this.btnModificarE);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.label4);
@@ -195,5 +208,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbApellido;
+        private System.Windows.Forms.Button btnModificarE;
     }
 }

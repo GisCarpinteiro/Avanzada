@@ -38,6 +38,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.tbidhelado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -129,12 +130,23 @@
             this.btnModificar.TabIndex = 10;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // tbidhelado
+            // 
+            this.tbidhelado.Enabled = false;
+            this.tbidhelado.Location = new System.Drawing.Point(36, 233);
+            this.tbidhelado.Name = "tbidhelado";
+            this.tbidhelado.Size = new System.Drawing.Size(34, 20);
+            this.tbidhelado.TabIndex = 11;
+            this.tbidhelado.Visible = false;
             // 
             // Inventario_Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 294);
+            this.Controls.Add(this.tbidhelado);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnEliminar);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.TextBox tbidhelado;
     }
 }
