@@ -63,6 +63,26 @@ namespace ProyectoFinal_Nieves.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrasesion {
+            get {
+                object obj = ResourceManager.GetObject("cerrasesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cerrasesion1 {
+            get {
+                object obj = ResourceManager.GetObject("cerrasesion1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondohelado1 {
             get {
                 object obj = ResourceManager.GetObject("fondohelado1", resourceCulture);

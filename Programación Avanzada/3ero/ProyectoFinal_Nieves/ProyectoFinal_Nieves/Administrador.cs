@@ -27,8 +27,8 @@ namespace ProyectoFinal_Nieves
         private void BtnVentas_Click(object sender, EventArgs e)
         {
            // Visible = false;
-            Inventario_Administrador Inventario_Administrador = new Inventario_Administrador();
-            Inventario_Administrador.Show();
+            VerVentas_Administrador VerVentas_Administrador = new VerVentas_Administrador();
+            VerVentas_Administrador.Show();
         }
 
         private void btnAdministrador_Click(object sender, EventArgs e)
@@ -41,6 +41,25 @@ namespace ProyectoFinal_Nieves
         {
             Inventario_Administrador Inventario_Administrador = new Inventario_Administrador();
             Inventario_Administrador.Show();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Visible = false;
+            MessageBox.Show("Sesión cerrada");
+            InicioSesion InicioSesion = new InicioSesion();
+            InicioSesion.Show();
+            
+        }
+
+        private void Administrador_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToString("G");
         }
     }
 }

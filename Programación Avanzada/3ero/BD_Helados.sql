@@ -56,6 +56,7 @@ INSERT INTO Trabajador (nombre, apellido, telefono,
 values ("Jorge", "Davalos", "33188990",
          "giselbonita",1, 2, 0);
 
+
 INSERT INTO Pedido( fecha, hora, subtotal, total, 
             id_trabajador, id_pedido) 
             values ("2019-05-31", "02:00:00", 50, 58,
@@ -67,6 +68,8 @@ INSERT INTO Helado(id_helado, precio, tipo_helado, cantidad, eliminadoh)
 INSERT INTO Cantidad(cantidad, id_pedido, id_helado,
             id_cantidad)
             values (2, 1, 1, 1);
+
+
 
 INSERT INTO Trabajador (nombre, apellido, telefono, 
             contrasena, id_trabajador, id_puesto, eliminado) 
@@ -83,5 +86,17 @@ INSERT INTO Helado (id_helado, precio, tipo_helado, cantidad, eliminadoh)
 INSERT INTO Helado(id_helado, precio, tipo_helado, cantidad, eliminadoh)
     values(4, 10, "Paleta", 50,  0);
 
+
+INSERT INTO Pedido( fecha, hora, subtotal, total, id_trabajador, id_pedido) 
+    values ("2019-06-16", "22:00:00", 60, 70, 1, 2);
+
+INSERT INTO Cantidad(cantidad, id_pedido, id_helado,
+            id_cantidad)
+            values (6, 2, 4, 2);
+
 /*select helado.tipo_helado, helado.precio, cantidad.cantidad from helado 
 inner join cantidad on cantidad.id_helado= helado.id_helado where eliminadoh=0;*/
+
+/*select trabajador.nombre, cantidad.cantidad, pedido.fecha, pedido.hora, pedido.total from pedido 
+inner join trabajador on trabajador.id_trabajador = pedido.id_trabajador
+inner join cantidad on cantidad.id_pedido = pedido.id_pedido where pedido.fecha=curdate();*/

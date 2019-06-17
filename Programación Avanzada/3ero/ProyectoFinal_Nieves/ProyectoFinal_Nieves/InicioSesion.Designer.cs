@@ -40,6 +40,7 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.a2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.cbMostrar = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
@@ -141,12 +142,24 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(366, 269);
             this.axWindowsMediaPlayer1.TabIndex = 6;
             // 
+            // cbMostrar
+            // 
+            this.cbMostrar.AutoSize = true;
+            this.cbMostrar.Location = new System.Drawing.Point(187, 200);
+            this.cbMostrar.Name = "cbMostrar";
+            this.cbMostrar.Size = new System.Drawing.Size(61, 17);
+            this.cbMostrar.TabIndex = 7;
+            this.cbMostrar.Text = "Mostrar";
+            this.cbMostrar.UseVisualStyleBackColor = true;
+            this.cbMostrar.CheckedChanged += new System.EventHandler(this.cbMostrar_CheckedChanged);
+            // 
             // InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(662, 375);
+            this.Controls.Add(this.cbMostrar);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -179,6 +192,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem a2ToolStripMenuItem;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.CheckBox cbMostrar;
     }
 }
 

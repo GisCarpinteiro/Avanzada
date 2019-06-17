@@ -29,7 +29,19 @@ namespace ProyectoFinal_Nieves
 
         }
 
-       
+        private void cbMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbMostrar.Checked == true)
+            {
+                //TbContraseña.Text = "";
+                TbContraseña.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                TbContraseña.UseSystemPasswordChar = true;
+                //TbContraseña.PasswordChar = '*';
+            }
+        }
 
         bool bandera_entroid =false, banderabienvenido=false;
 
@@ -151,7 +163,10 @@ namespace ProyectoFinal_Nieves
             axWindowsMediaPlayer1.URL = @"C:\Users\home\Videos\NuevoHelado.mp4";
             axWindowsMediaPlayer1.settings.setMode("loop", true);
             axWindowsMediaPlayer1.uiMode = ("none");
-
+            TbContraseña.UseSystemPasswordChar = true;
         }
+
+
+        
     }
 }

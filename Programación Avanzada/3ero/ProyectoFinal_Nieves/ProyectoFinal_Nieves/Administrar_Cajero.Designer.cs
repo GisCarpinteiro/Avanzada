@@ -74,7 +74,6 @@
             // 
             // tbIdE
             // 
-            this.tbIdE.Enabled = false;
             this.tbIdE.Location = new System.Drawing.Point(31, 197);
             this.tbIdE.Name = "tbIdE";
             this.tbIdE.Size = new System.Drawing.Size(100, 20);

@@ -93,7 +93,7 @@ namespace ProyectoFinal_Nieves
             {
                 conexion.Open();
                 MySqlCommand eliminarusuario =
-                new MySqlCommand("update helado set eliminadoh=1 where id_helado= " + idheladoh, conexion);
+                new MySqlCommand("update helado set eliminadoh=1 where id_helado= " + tbidhelado.Text, conexion);
                 if (eliminarusuario.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Se elimino el helado");

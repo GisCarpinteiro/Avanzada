@@ -127,6 +127,14 @@ namespace ProyectoFinal_Nieves
             ///////////////////////////////////////////////
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Visible = false;
+            MessageBox.Show("Sesión cerrada");
+            InicioSesion InicioSesion = new InicioSesion();
+            InicioSesion.Show();
+        }
+
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             cantidad = Convert.ToDouble(nuCantidad.Value);
