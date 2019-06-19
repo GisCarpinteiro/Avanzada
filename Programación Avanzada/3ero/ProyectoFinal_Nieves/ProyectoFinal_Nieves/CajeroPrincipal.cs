@@ -42,7 +42,7 @@ namespace ProyectoFinal_Nieves
             mostrarnombre();
             idt = lbl_id.Text;
             sacarIdpedido();
-            //mostrarDatos();
+            mostrarDatos();
             sacaridcantidad();
 
 
@@ -489,9 +489,17 @@ namespace ProyectoFinal_Nieves
 
         void descuentar() {
             descuento();
-            if (d > 5) { }
-             if (d > 10) { }
-            
+            if (d > 5) {
+                TbDescuento.Text = Convert.ToString(valor * .10);
+                 
+            }
+            if (d > 10)
+            {
+                TbDescuento.Text = Convert.ToString(valor * .20);
+            }
+            if(d<=5)
+                TbDescuento.Text = "0"; 
+
   
         }
 
@@ -526,7 +534,8 @@ namespace ProyectoFinal_Nieves
             valor = valorn + valor;
             MessageBox.Show("v  " + valor);
             TbSubtotal.Text = Convert.ToString(valor);
-            
+            descuentar();
+            TbTotal.Text = Convert.ToString(Convert.ToInt32(TbSubtotal.Text) - Convert.ToInt32(TbDescuento.Text));
 
         }
     }
