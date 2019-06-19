@@ -29,7 +29,8 @@ namespace ProyectoFinal_Nieves
             cbFiltro.Items.Add("Todos los días");
             cbFiltro.Items.Add("Anteriores días");
             filtrodia();
-            gananciadías(); 
+            gananciadías();
+            cantidaddia();
         }
 
         private void cbFiltro_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,15 +40,17 @@ namespace ProyectoFinal_Nieves
             if (cbFiltro.SelectedIndex == 0) {
                 filtrodia();
                 gananciadías();
+                cantidaddia();
             }
             if (cbFiltro.SelectedIndex == 1) {
                 filtrotodos();
                 gananciatodos();
+                cantidadTodos();
             }
             if (cbFiltro.SelectedIndex == 2) {
                 anterioresdias();
                 gananciaanteriores();
-                
+                cantidadanteriores();
             }
         }
 
@@ -162,6 +165,62 @@ namespace ProyectoFinal_Nieves
                 conexion.Open();
                 MySqlCommand gdia = new MySqlCommand("select sum(total) from pedido where fecha<curdate()", conexion);
                 tbGanancia.Text = gdia.ExecuteScalar().ToString();
+                conexion.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void cantidadTodos() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand gdia = new MySqlCommand("select  sum(cantidad.cantidad) from cantidad inner join pedido on cantidad.id_pedido= pedido.id_pedido where pedido.fecha <= curdate();", conexion);
+                tbAv.Text = gdia.ExecuteScalar().ToString();
+                conexion.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        void cantidaddia() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand gdia = new MySqlCommand("select  sum(cantidad.cantidad) from cantidad inner join pedido on cantidad.id_pedido= pedido.id_pedido where pedido.fecha = curdate();", conexion);
+                tbAv.Text = gdia.ExecuteScalar().ToString();
+                conexion.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void cantidadanteriores() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand gdia = new MySqlCommand("select  sum(cantidad.cantidad) from cantidad inner join pedido on cantidad.id_pedido= pedido.id_pedido where pedido.fecha < curdate();", conexion);
+                tbAv.Text = gdia.ExecuteScalar().ToString();
                 conexion.Close();
 
 

@@ -126,6 +126,8 @@ namespace ProyectoFinal_Nieves
                                 Visible = false;
                                 CajeroPrincipal CajeroPrincipal = new CajeroPrincipal();
                                 CajeroPrincipal.lbl_id.Text = Convert.ToString(id);
+                               // Ver_ventasCajero Ver_ventasCajero = new Ver_ventasCajero();
+                               // Ver_ventasCajero.tbIdtrabajador.Text = Convert.ToString(id); 
                                 CajeroPrincipal.Show();
                                 
                                

@@ -94,9 +94,23 @@ INSERT INTO Cantidad(cantidad, id_pedido, id_helado,
             id_cantidad)
             values (6, 2, 4, 2);
 
+/*Agregar a trabajador con idtrabajador=5*/
+INSERT INTO Pedido( fecha, hora, subtotal, total, id_trabajador, id_pedido) 
+    values (curdate(), time(now()), 40, 46, 5, 3);
+
+INSERT INTO Cantidad(cantidad, id_pedido, id_helado, id_cantidad)
+ values (2, 3, 2, 3);
+ 
+INSERT INTO Cantidad(cantidad, id_pedido, id_helado, id_cantidad)
+ values (2, 1, 2, 4);
+
+
+
 /*select helado.tipo_helado, helado.precio, cantidad.cantidad from helado 
 inner join cantidad on cantidad.id_helado= helado.id_helado where eliminadoh=0;*/
 
 /*select trabajador.nombre, cantidad.cantidad, pedido.fecha, pedido.hora, pedido.total from pedido 
 inner join trabajador on trabajador.id_trabajador = pedido.id_trabajador
 inner join cantidad on cantidad.id_pedido = pedido.id_pedido where pedido.fecha=curdate();*/
+
+/*select  sum(cantidad.cantidad) from cantidad inner join pedido on cantidad.id_pedido= pedido.id_pedido where pedido.fecha <= curdate();/*

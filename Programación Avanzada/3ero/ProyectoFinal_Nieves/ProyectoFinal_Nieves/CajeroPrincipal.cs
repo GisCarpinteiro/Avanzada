@@ -25,6 +25,11 @@ namespace ProyectoFinal_Nieves
 
         string t_helado, helado;
         double precioHelado, cantidad; //double
+        string idt;
+        int idhelado=0;
+        int idpedido, idcantidad;
+        int cuenta = 0, d;
+        DataSet ds;
 
         
        // int id_cajero;
@@ -35,14 +40,20 @@ namespace ProyectoFinal_Nieves
             timer1.Start();
             mostrarhelados();
             mostrarnombre();
-            dgvPedido.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            /*dgvPedido.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvPedido.MultiSelect = false;
             dgvPedido.ColumnCount = 3;
             this.Controls.Add(dgvPedido);
             dgvPedido.Columns[0].HeaderText = "Cantidad";
             dgvPedido.Columns[1].HeaderText = "Tipo Helado";
-            dgvPedido.Columns[2].HeaderText = "Precio";
+            dgvPedido.Columns[2].HeaderText = "Precio";*/
+            idt = lbl_id.Text;
+            sacarIdpedido();
+            mostrarDatos();
+            sacaridcantidad();
 
+
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -55,7 +66,7 @@ namespace ProyectoFinal_Nieves
             try
             {
                 conexion.Open();
-                MySqlCommand querythelado = new MySqlCommand("select tipo_helado from helado", conexion);
+                MySqlCommand querythelado = new MySqlCommand("select tipo_helado from helado where eliminadoh=0", conexion);
                 MySqlDataReader reader;
                 reader = querythelado.ExecuteReader();
 
@@ -107,24 +118,42 @@ namespace ProyectoFinal_Nieves
 
         private void cb_tipohelado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //mostrarhelados();
+            sacaridhelado();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            //////////// Solo dgv /////////////////////////////
+           
+
             try
             {
-                foreach (DataGridViewRow item in this.dgvPedido.SelectedRows)
-                {
-                    dgvPedido.Rows.RemoveAt(item.Index);
-                }
-            }
-            catch (Exception) {
-                MessageBox.Show("Error, se elimino un campo vacio");
+                conexion.Open();
+                MySqlCommand insertardatos =
+                new MySqlCommand("delete from cantidad  where id_cantidad= '" + idcantidad + "'", conexion);
 
+                if (insertardatos.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se eliminaron datos");
+
+
+                }
+                else
+                    MessageBox.Show("No se eliminaron datos");
+
+
+                conexion.Close();
             }
-            ///////////////////////////////////////////////
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar eliminar");
+                MessageBox.Show(ex.Message);
+            }
+
+            
+            mostrarDatos();
+            
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -135,29 +164,236 @@ namespace ProyectoFinal_Nieves
             InicioSesion.Show();
         }
 
-        private void BtnAgregar_Click(object sender, EventArgs e)
+        private void lblVentas_Click(object sender, EventArgs e)
         {
-            cantidad = Convert.ToDouble(nuCantidad.Value);
-
-            helado = Convert.ToString(cb_tipohelado);
-            sacarprecio();
-            dgvPedido.Rows.Add(nuCantidad.Value, cb_tipohelado.SelectedItem, (precioHelado * cantidad));
+            Ver_ventasCajero Ver_ventasCajero = new Ver_ventasCajero();
+            Ver_ventasCajero.Show();
+    
+            Ver_ventasCajero.lblid.Text = idt;
+            //MessageBox.Show("ver ventas" + Ver_ventasCajero.lblid.Text);
         }
 
-       void sacarprecio() {
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            //cantidad = Convert.ToDouble(nuCantidad.Value);
+            //helado = Convert.ToString(cb_tipohelado);
+            //sacarprecio();
+            //cuenta= cuenta+1;
+            sacaridcantidad();
+            //idcantidad = idcantidad + 1;
+            idcantidad++;
+            sacaridhelado();
+            insertarcantidad();
+            mostrarDatos();
+            
+
+
+        }
+
+
+        private void rbT_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbT.Checked == true)
+            {
+                lblT.Visible = true;
+                tbTarjeta.Visible = true;
+                lbltxt.Visible = true;
+
+            }
+        }
+
+        private void rbE_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbE.Checked == true)
+            {
+                lblT.Visible = false;
+                tbTarjeta.Visible = false;
+                lbltxt.Visible = false;
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("filas"+ dgvPedido.CurrentRow.Index);
+            pedido();
+
+        }
+
+
+        private void tbnuevo_Click(object sender, EventArgs e)
+        {
+            nuevopedido();
+            mostrarDatos();
+        }
+
+        void sacarIdpedido() {
             try
             {
                 conexion.Open();
-                MySqlCommand querythelado = new MySqlCommand("select precio from helado where tipo_helado= '" + cb_tipohelado.SelectedItem + "'", conexion);
-                MySqlDataReader reader;
-                reader = querythelado.ExecuteReader();
+                MySqlCommand id = new MySqlCommand("select count(*) from pedido", conexion);
+                idpedido = Convert.ToInt32(id.ExecuteScalar().ToString());
+                //tbGanancia.Text = gdia.ExecuteScalar().ToString();
+                conexion.Close();
 
-                while (reader.Read())
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        void sacaridcantidad() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand id = new MySqlCommand("select count(*) from cantidad", conexion);
+                idcantidad = Convert.ToInt32(id.ExecuteScalar().ToString());
+                //tbGanancia.Text = gdia.ExecuteScalar().ToString();
+                //cidcantidad = idcantidad;
+                conexion.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+            
+        }
+      /*  void insertarenCantidad() {
+
+            //sacaridcantidad();
+            
+            try
+            {
+                conexion.Open();
+                MySqlCommand insertardatos =
+                new MySqlCommand("insert into cantidad(cantidad, id_pedido, id_helado, id_cantidad) values ('" + nuCantidad.Value + "', '"+ idpedido + "', '" + idhelado + "', '" + idcantidad + "')", conexion);
+
+                if (insertardatos.ExecuteNonQuery() == 1)
                 {
-
-                    precioHelado = Convert.ToDouble(reader["precio"]) ;
+                    MessageBox.Show("Se insertaron datos");
+                    
 
                 }
+                else
+                    MessageBox.Show("No se insertaron datos");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+        } */
+
+        void pedido()
+        {
+            
+            try
+            {
+                conexion.Open();
+                MySqlCommand insertardatos =
+                new MySqlCommand("insert into pedido(fecha, hora, subtotal, total, id_trabajador, id_pedido) values (curdate(), time(now()),'" + TbSubtotal.Text + "', '" + TbTotal.Text + "', '" + lbl_id.Text + "', '" + idpedido + "')", conexion);
+
+                if (insertardatos.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se insertaron datos");
+
+
+                }
+                else
+                    MessageBox.Show("No se insertaron datos");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar insertar");
+                MessageBox.Show(ex.Message);
+            }
+
+            
+
+        }
+
+        private void tbTarjeta_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                cuenta = Convert.ToInt32(tbTarjeta.Text);
+
+                if (tbTarjeta.Text == "")
+                    lblT.Text = "No";
+                if (cuenta <= 3000 && cuenta >= 0)
+                    lblT.Text = "Mastercard";
+                if (cuenta > 3000 && cuenta <= 7000)
+                    lblT.Text = "Visa";
+                if (cuenta > 7000)
+                    lblT.Text = "Amex";
+            }
+            catch (Exception) {
+                // MessageBox.Show("");
+                lblT.Text = "No";
+            }
+        }
+
+        void nuevopedido()
+        {
+            idpedido = idpedido + 1;
+            try
+            {
+                conexion.Open();
+                MySqlCommand insertardatos =
+                new MySqlCommand("insert into pedido(fecha, hora, subtotal, total, id_trabajador, id_pedido) values (curdate(), time(now()), 0, 0,'"+ lbl_id.Text + "', '" + idpedido + "')", conexion);
+
+                if (insertardatos.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Nuevo pedido");
+
+
+                }
+                else
+                    MessageBox.Show("No se insertaron datos");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar insertar");
+                MessageBox.Show(ex.Message);
+            }
+
+            
+
+        }
+
+        void mostrarDatos() {
+            //btn agregar y nuevo
+            try
+            {
+                conexion.Open();
+                MySqlCommand trabajador = new MySqlCommand("select cantidad.cantidad, helado.tipo_helado, helado.precio from cantidad inner join helado on cantidad.id_helado = helado.id_helado where cantidad.cantidad > 0 and cantidad.id_pedido = '" + idpedido + "'", conexion);
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter(trabajador);
+                ds = new DataSet();
+                adapter.Fill(ds);
+
+                dgvPedido.DataSource = ds.Tables[0];
 
                 conexion.Close();
             }
@@ -169,6 +405,88 @@ namespace ProyectoFinal_Nieves
             }
 
 
+        }
+
+       void sacaridhelado() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand querythelado = new MySqlCommand("select id_helado from helado where tipo_helado= '" + cb_tipohelado.SelectedItem + "'", conexion);
+                MySqlDataReader reader;
+                reader = querythelado.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    idhelado = Convert.ToInt32(reader["id_helado"]);
+
+                }
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al sacar helado");
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        void insertarcantidad() {
+
+
+            try
+            {
+                conexion.Open();
+                MySqlCommand insertardatos =
+                new MySqlCommand("insert cantidad(cantidad, id_pedido, id_helado, id_cantidad) values ('" + nuCantidad.Value + "', '" + idpedido + "', '" + idhelado + "', '" + idcantidad  + "')", conexion);
+
+                if (insertardatos.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Se agregaron datos");
+
+
+                }
+                else
+                    MessageBox.Show("No se insertaron datos");
+
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar insertar");
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        void descuento() {
+            try
+            {
+                conexion.Open();
+                MySqlCommand id = new MySqlCommand("select sum(cantidad) from cantidad where id_pedido='" + idpedido + "'", conexion);
+                d = Convert.ToInt32(id.ExecuteScalar().ToString());
+                conexion.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar descuento");
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void descuentar() {
+            descuento();
+            if (d > 5) { }
+             if (d > 10) { }
+            
+  
         }
     }
 }
