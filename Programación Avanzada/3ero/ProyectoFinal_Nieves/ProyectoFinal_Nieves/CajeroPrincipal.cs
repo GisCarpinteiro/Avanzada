@@ -305,16 +305,16 @@ namespace ProyectoFinal_Nieves
             {
                 conexion.Open();
                 MySqlCommand insertardatos =
-                new MySqlCommand("insert into pedido(fecha, hora, subtotal, total, id_trabajador, id_pedido) values (curdate(), time(now()),'" + TbSubtotal.Text + "', '" + TbTotal.Text + "', '" + lbl_id.Text + "', '" + idpedido + "')", conexion);
+                new MySqlCommand("update pedido set subtotal= '" + TbSubtotal.Text + "', total= '" + TbTotal.Text + "' where id_pedido= '"+ idpedido + "'", conexion);
 
                 if (insertardatos.ExecuteNonQuery() == 1)
                 {
-                    MessageBox.Show("Se insertaron datos");
+                    MessageBox.Show("Se guardo el pedido");
 
 
                 }
                 else
-                    MessageBox.Show("No se insertaron datos");
+                    MessageBox.Show("No se guardo el pedido");
 
 
                 conexion.Close();
@@ -322,7 +322,7 @@ namespace ProyectoFinal_Nieves
             catch (Exception ex)
             {
 
-                MessageBox.Show("Error al conectar insertar");
+                MessageBox.Show("Error al conectar modificar");
                 MessageBox.Show(ex.Message);
             }
 
