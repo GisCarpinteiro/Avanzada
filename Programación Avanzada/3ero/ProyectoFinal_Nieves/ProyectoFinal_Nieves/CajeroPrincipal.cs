@@ -23,12 +23,12 @@ namespace ProyectoFinal_Nieves
 
         }
 
-        string t_helado, helado;
-        double precioHelado, cantidad; //double
+        string t_helado;
         string idt;
         int idhelado=0;
         int idpedido, idcantidad;
-        int cuenta = 0, d;
+        int cuenta = 0, d, cc;
+        int valorn=0, valor = 0;
         DataSet ds;
 
         
@@ -40,16 +40,9 @@ namespace ProyectoFinal_Nieves
             timer1.Start();
             mostrarhelados();
             mostrarnombre();
-            /*dgvPedido.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPedido.MultiSelect = false;
-            dgvPedido.ColumnCount = 3;
-            this.Controls.Add(dgvPedido);
-            dgvPedido.Columns[0].HeaderText = "Cantidad";
-            dgvPedido.Columns[1].HeaderText = "Tipo Helado";
-            dgvPedido.Columns[2].HeaderText = "Precio";*/
             idt = lbl_id.Text;
             sacarIdpedido();
-            mostrarDatos();
+            //mostrarDatos();
             sacaridcantidad();
 
 
@@ -181,9 +174,12 @@ namespace ProyectoFinal_Nieves
             //cuenta= cuenta+1;
             sacaridcantidad();
             //idcantidad = idcantidad + 1;
+            
             idcantidad++;
+            
             sacaridhelado();
             insertarcantidad();
+            csubtotal();
             mostrarDatos();
             
 
@@ -198,8 +194,10 @@ namespace ProyectoFinal_Nieves
                 lblT.Visible = true;
                 tbTarjeta.Visible = true;
                 lbltxt.Visible = true;
-
+                
             }
+
+           
         }
 
         private void rbE_CheckedChanged(object sender, EventArgs e)
@@ -209,7 +207,10 @@ namespace ProyectoFinal_Nieves
                 lblT.Visible = false;
                 tbTarjeta.Visible = false;
                 lbltxt.Visible = false;
+                
             }
+
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -382,6 +383,11 @@ namespace ProyectoFinal_Nieves
 
         }
 
+        private void TbSubtotal_TextChanged(object sender, EventArgs e)
+        {
+            TbSubtotal.Text = Convert.ToString(valor);
+        }
+
         void mostrarDatos() {
             //btn agregar y nuevo
             try
@@ -487,6 +493,41 @@ namespace ProyectoFinal_Nieves
              if (d > 10) { }
             
   
+        }
+
+
+        void csubtotal()
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand checar = new MySqlCommand("select cantidad.cantidad as cantidad, helado.precio as precio from cantidad inner join helado on cantidad.id_helado = helado.id_helado where cantidad.id_cantidad = '" + idcantidad + "'", conexion);
+                MySqlDataReader reader;
+                reader = checar.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    cc = (Convert.ToInt32(reader["cantidad"]) )* (Convert.ToInt32(reader["precio"]));
+
+
+                }
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al conectar1");
+                MessageBox.Show(ex.Message);
+            }
+
+            valorn = cc;
+            MessageBox.Show("v  " + valorn);
+            valor = valorn + valor;
+            MessageBox.Show("v  " + valor);
+            TbSubtotal.Text = Convert.ToString(valor);
+            
+
         }
     }
 }

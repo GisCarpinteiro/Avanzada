@@ -156,6 +156,7 @@
             this.TbSubtotal.Name = "TbSubtotal";
             this.TbSubtotal.Size = new System.Drawing.Size(100, 20);
             this.TbSubtotal.TabIndex = 12;
+            this.TbSubtotal.TextChanged += new System.EventHandler(this.TbSubtotal_TextChanged);
             // 
             // TbDescuento
             // 
